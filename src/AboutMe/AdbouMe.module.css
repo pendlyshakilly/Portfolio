@@ -1,0 +1,53 @@
+.Main {
+  min-height: 110vh;
+  background: #1c1e21;
+  display: flex;
+  align-items: center;
+}
+.Main .Container {
+  justify-content: space-around;
+}
+.Main .Container .Photo {
+  background-color: #50BEC2;
+  width: 340px;
+  min-height: 500px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.Main .Container .AboutMe {
+  margin-left: 5px;
+  padding: 10px;
+  max-width: 500px;
+}
+.Main .Container .AboutMe .Info {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  word-spacing: 0;
+  color: #909090;
+}
+.Main .Container .AboutMe .Title {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 42px;
+}
+.Main .Container .AboutMe .progresTitle {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0px 6px 0px;
+  color: #ffffff;
+}
+.Main .Container .AboutMe .Description {
+  display: flex;
+  align-items: center;
+}
+.Main .Container .AboutMe .Description .ProgressBar {
+  background-color: rgb(48, 48, 48);
+  width: 305px;
+  height: 6px;
+  border-radius: 10px;
+}/*# sourceMappingURL=AdbouMe.module.css.map */

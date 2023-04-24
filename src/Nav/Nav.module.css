@@ -1,0 +1,12 @@
+.Nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.Nav .button {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}/*# sourceMappingURL=Nav.module.css.map */

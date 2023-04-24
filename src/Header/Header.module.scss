@@ -1,0 +1,12 @@
+@import "../Common/Styles/Scss/Variables.scss";
+
+.Header{
+    background-color: $BgColor;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12%;
+    padding-top: 8px;
+
+}

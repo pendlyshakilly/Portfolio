@@ -1,0 +1,71 @@
+.Main {
+  padding: 10px;
+  min-height: 92vh;
+  background: #171a1d;
+  display: flex;
+  align-items: center;
+}
+.Main .Container {
+  justify-content: space-around;
+}
+.Main .Container .Photo {
+  background-color: wheat;
+  width: 340px;
+  min-height: 500px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.Main .Container .AboutMe {
+  margin-left: 5px;
+  max-width: 500px;
+}
+.Main .Container .AboutMe .Info {
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Saira", Helvetica, Arial, sans-serif;
+}
+.Main .Container .AboutMe .Name {
+  font-size: 50px;
+  font-family: "Saira", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 70px;
+  font-weight: 700;
+}
+.Main .Container .AboutMe .description {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  word-spacing: 0;
+  color: #909090;
+}
+.Main .Container .AboutMe .Button {
+  display: flex;
+  justify-content: baseline;
+}
+@media screen and (max-width: 870px) {
+  .Main .Container .AboutMe .Button {
+    justify-content: center;
+  }
+}
+.Main .Container .AboutMe .Button .btn {
+  background: rgb(80, 190, 194);
+  border-radius: 8px;
+  font-family: inherit;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  outline: 0;
+  padding: 4px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}/*# sourceMappingURL=Main.module.css.map */
