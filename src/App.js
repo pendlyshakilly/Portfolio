@@ -9,7 +9,7 @@ import Footer from "./Footer/Footer";
 import AboutMe from './AboutMe/AdbouMe';
 
 function App() {
-    
+    const x = 0
     return (
         <div className="App">
            <Header/>
