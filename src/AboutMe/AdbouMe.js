@@ -3,7 +3,7 @@ import styles from './AdbouMe.module.scss'
 import stylesContainer from '../Common/Styles/Container.module.scss'
 
 const AboutMe = () => {
-   const skilsStatus = [{status: 75, name: 'Javascript'},{status: 67, name: 'Typescript'},{status: 40, name: 'Css'},{status: 60, name: 'TeamLead'}] 
+   let skilsStatus = [{status: 75, name: 'Javascript'},{status: 67, name: 'Typescript'},{status: 40, name: 'Css'},{status: 60, name: 'TeamLead'}] 
   
     return (
         <div className={styles.Main}>
