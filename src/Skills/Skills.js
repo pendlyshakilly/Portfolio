@@ -7,9 +7,9 @@ import Logo2 from '../Common/Image/free_icon_2.svg'
 import Logo3 from '../Common/Image/free_icon_3.svg'
 
 const Skills = () => {
-    const state = [{title: 'React', description: 'Hi my name is Illya i am react frontend developer I study on technical lyceum, i am 16 years old', Logo: Logo1},
-        {title: 'Angular', description: 'Hi my name is Illya i am react frontend developer I study on technical lyceum, i am 16 years old', Logo: Logo2},
-        {title: 'Vue', description: 'Hi my name is Illya i am react frontend developer I study on technical lyceum, i am 16 years old', Logo: Logo3}]
+    const state = [{title: 'React', description: 'Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...', Logo: Logo1},
+        {title: 'Angular', description: 'Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...', Logo: Logo2},
+        {title: 'Vue', description: 'Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...', Logo: Logo3}]
 
     return (
         <div className={styles.SkillsBlock}>
