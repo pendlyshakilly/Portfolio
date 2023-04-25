@@ -5,9 +5,6 @@
   display: flex;
   align-items: center;
 }
-.Main .Container {
-  justify-content: space-around;
-}
 .Main .Container .Photo {
   background-color: wheat;
   width: 340px;
@@ -42,16 +39,7 @@
   word-spacing: 0;
   color: #909090;
 }
-.Main .Container .AboutMe .Button {
-  display: flex;
-  justify-content: baseline;
-}
-@media screen and (max-width: 870px) {
-  .Main .Container .AboutMe .Button {
-    justify-content: center;
-  }
-}
-.Main .Container .AboutMe .Button .btn {
+.Main .Container .AboutMe .btn {
   background: rgb(80, 190, 194);
   border-radius: 8px;
   font-family: inherit;
