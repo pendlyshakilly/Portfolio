@@ -14,9 +14,9 @@ const AboutMe = () => {
              <span className={styles.Info}>
              In quis amet ex veniam in irure est culpa veniam velit fugiat cupidatat duis anim commodo elit in occaecat cupidatat eu et sunt commodo voluptate ullamco magna nulla amet. Lorem ipsum officia veniam enim sit culpa velit proident enim ea officia aute non in mollit culpa anim magna sit veniam irure eiusmod.
              </span>
-            
-            {skilsStatus.map(el => {
-                return <div style={{padding: '10px'}}>
+    
+            {skilsStatus.map((el, i) => {
+                return <div style={{padding: '10px'}} key={i}>
                   <div className={styles.progresTitle}>
                         <span>{el.name}</span>
                         </div>

@@ -1,0 +1,48 @@
+@import '../../Common/Styles/Scss/Variables.scss';
+
+.skill{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    margin: 15px;
+    @media screen and(max-width: 900px) {
+        width: 90%;
+        margin-right: 0px;
+      }
+    ::before{
+        content: '';
+        position: absolute;
+        background-color: $secondaryColor;
+        width: 1.3px;
+        height: 120%;
+        left: 0;
+        bottom: -25px;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        padding: 5px 0px 5px 0px;
+        .icon{
+            width: 60px;
+            height: 60px;
+        }
+        .H3{
+            margin: 0 auto;
+            margin-left: 20px;
+            font-family: "Saira",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            color: $textColor;
+        }
+    }
+    .text{
+        font-family: "Nunito",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.8em;
+        word-spacing: 0;
+        color: $secondaryColor;
+    }
+}

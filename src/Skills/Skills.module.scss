@@ -1,0 +1,47 @@
+@import '../Common/Styles/Scss/Variables.scss'; 
+
+.SkillsBlock{
+    background-color: $BgColor;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .SkillsContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 80vh;
+        justify-content: space-around;
+        .title{
+            font-size: 34px;
+            line-height: 42px;
+            color: $textColor;
+            font-family: "Saira",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            .Psevdo{
+                position: relative;
+            }
+            ::before{
+                content: '';
+                position: absolute;
+                background-color: #50BEC2;
+                width: 50%;
+                height: 1.35px;
+                left: 55px;
+                bottom: 0px;
+            }
+        }
+        .skills{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and(max-width: 900px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+        }
+        
+    }
+}
