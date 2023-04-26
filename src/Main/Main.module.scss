@@ -2,12 +2,26 @@
 
 .Main {
     padding: 10px;
-    min-height: 92vh;
+    min-height: 100vh;
     background: $BgColor;
     display: flex;
     align-items: center;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image: url('https://i.postimg.cc/sX4H1JXd/BackImg.png');
+        background-size: cover;
+        background-position: top center;
+        opacity: 0.25;
+    }  
     .Container{
         justify-content: space-around;
+        position: relative;
         .Photo {
         background-color: wheat;
         width: 340px;
@@ -16,6 +30,7 @@
         margin-left: 5px
     }
     .AboutMe {
+        position: relative;
         margin-left: 5px;
         max-width: 500px;
         .Info{
@@ -47,28 +62,10 @@
             @media screen and(max-width: 870px) {
               justify-content: center;
             }
-           .btn{
-            background: rgb(80, 190, 194);
-            border-radius: 8px;
-            font-family: inherit;
-            border: none;
-            color: #fff;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: 700;
-            outline: 0;
-            padding: 4px 40px;
-            text-align: center;
-            text-decoration: none;
-            transition: .5s;
-            line-height: 30px;
-            margin: 0;
-            text-align: center;
-        }
+       }
+      }
     }
-}
-}
-}
+  }
 
 
 

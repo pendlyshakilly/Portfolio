@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './Project.module.css'
-
+import styles from './Project.module.scss'
+import styleButton from '../../Common/Styles/Button.module.scss'
 
 const Project = (props) => {
     return (
         <div className={styles.project}>
-          <div className={styles.icon}>
-              <span className={styles.Span}><h1>Check</h1></span>
+          <div className={styles.icon} style={props.styles}>
+              <span className={`${styles.Span} ${styleButton.Button}`}><h1>Check</h1></span>
           </div>
-            <h3 className={styles.Text}>{props.title}</h3>
-            <span className={styles.Text}>{props.description}</span>
+            <h3 className={styles.Title}>{props.title}</h3>
+            <span className={styles.Description}>{props.description}</span>
         </div>
     );
 };

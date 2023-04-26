@@ -1,0 +1,43 @@
+@import '../Common/Styles/Scss/Variables.scss';
+
+.ProjectBlock{
+    background-color:  $BgColor;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .ProjectContainer{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 70vh;
+        display: flex;
+        .title{
+            font-size: 35px;
+            line-height: 42px;
+            color: $textColor;
+            font-family: "Saira",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            position: relative;
+            ::before{
+                content: '';
+                position: absolute;
+                background-color: #50BEC2;
+                width: 50%;
+                height: 1.35px;
+                left: 49px;
+                bottom: -7px;
+            }
+        }
+        .Projects{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+           @media screen and (max-width: 740px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           }
+        }
+    }
+}
