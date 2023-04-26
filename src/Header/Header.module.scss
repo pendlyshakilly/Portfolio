@@ -2,11 +2,31 @@
 
 .Header{
     background-color: $BgColor;
-    height: 8vh;
+    min-height: 8vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding-right: 12%;
     padding-top: 8px;
-
+    flex-wrap: wrap-reverse;
+    .select{
+   margin: 15px;
+   .Container{
+    position: absolute; 
+    color: white; 
+    z-index: 2; 
+    background: none;
+    @media screen and (max-width: 428px) {
+        background-color: #171a1d;
+    }
+    .ContainerMain{
+        border: 1px solid grey; 
+        display: flex; justify-content: space-between;
+        align-items: center;
+    }
+   }
+    } img{
+        width: 30px;
+        height: 30px;
+    }
 }

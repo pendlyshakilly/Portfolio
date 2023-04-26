@@ -6,7 +6,7 @@ const Project = (props) => {
     return (
         <div className={styles.project}>
           <div className={styles.icon} style={props.styles}>
-              <span className={`${styles.Span} ${styleButton.Button}`}><h1>Check</h1></span>
+              <span className={`${styles.Span} ${styleButton.Button}`} style={{backgroundColor: `${props.PrimeryColor}`}}><h1>Check</h1></span>
           </div>
             <h3 className={styles.Title}>{props.title}</h3>
             <span className={styles.Description}>{props.description}</span>

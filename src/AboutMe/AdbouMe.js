@@ -2,7 +2,7 @@ import React from "react";
 import styles from './AdbouMe.module.scss'
 import stylesContainer from '../Common/Styles/Container.module.scss'
 
-const AboutMe = () => {
+const AboutMe = (props) => {
    let skilsStatus = [{status: 75, name: 'Javascript', width: 228.75},{status: 67, name: 'Typescript', width: 204.35},{status: 40, name: 'Css', width: 122},{status: 60, name: 'TeamLead', width: 183}] 
   
     return (
@@ -22,7 +22,7 @@ const AboutMe = () => {
                         </div>
                      <div className={styles.Description}>
                     <div  className={styles.ProgressBar}>
-                    <div style={{width: `${el.width}px`, height: '6px', backgroundColor: '#50BEC2', borderRadius: '5px'}}></div>
+                    <div style={{width: `${el.width}px`, height: '6px', backgroundColor: `${props.PrimeryColor}`, borderRadius: '5px'}}></div>
                     </div>
                     <div style={{paddingLeft: '10px', color: 'white'}}>{el.status}%</div>
                 

@@ -1,0 +1,80 @@
+.ContactsBlock{
+    background-color: #93ff9d;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/GpXn0j12/Image12.png');
+    background-size: cover;
+    background-position: top center;
+    .ContactsContainer{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 80vh;
+        .title{
+            font-size: 35px;
+            line-height: 42px;
+            color: #ffffff;
+            font-family: "Saira",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+        .form{
+            min-height: 230px;
+            min-width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            .TextArea{
+                min-height: 168px;
+                width: 100%;
+                background: none;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 10px;
+            }
+            .Button{
+                margin-top: 15px;
+            }
+            .Input{
+                background: none;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin-bottom: 15px;
+                width: 100%;
+            }::placeholder{
+                color: rgba(255, 255, 255, 0.2);
+            }
+        }
+        .Info{
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 530px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .Title{
+                color: #fff;
+                font-family: "Saira",Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                padding: 0px;
+                margin: 0 auto;
+            }
+            .Description{
+                color: #909090;
+                font-family: "Nunito",Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                line-height: 1.8em;
+            }
+        }
+    }
+}
+
+
+
+
+

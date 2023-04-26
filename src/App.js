@@ -7,17 +7,28 @@ import RemoteWork from "./RemoteWork/RemoteWork";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
 import AboutMe from './AboutMe/AdbouMe';
+import { useState } from 'react';
 
 function App() {
+   const [primeryColor, setPrimeryColor] = useState('#50BEC2')
+   const [editMode, setEditMode] = useState(true)
+   
+   const ChangeColor = (color) => {
+       setPrimeryColor(color)
+   }
+   const onClickHandler = () => {
+    setEditMode(!editMode)
+   }
+
     return (
         <div className="App">
-           <Header/>
-            <Main/>
-            <AboutMe/>
+           <Header onClick={onClickHandler} editMode={editMode} ChangeColor={ChangeColor}/>
+            <Main PrimeryColor={primeryColor}/>
+            <AboutMe PrimeryColor={primeryColor}/>
             <Skills/>
-            <Projects/>
-            <RemoteWork/>
-            <Contacts/>
+            <Projects PrimeryColor={primeryColor}/>
+            <RemoteWork PrimeryColor={primeryColor}/>
+            <Contacts PrimeryColor={primeryColor}/>
             <Footer/>
         </div>
     );

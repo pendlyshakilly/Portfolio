@@ -14,7 +14,7 @@ const Skills = () => {
     return (
         <div className={styles.SkillsBlock}>
          <div className={`${stylesContainer.Container} ${styles.SkillsContainer}`}>
-             <h1 className={styles.title}><span className={styles.Psevdo}>What I Knew</span></h1>
+             <h1 className={styles.title}><span>What I Knew</span></h1>
              <div className={styles.skills}>              
                  {state.map((el , i) => <Skill key={i} title={el.title} description={el.description} Logo={el.Logo}/>)}
              </div>

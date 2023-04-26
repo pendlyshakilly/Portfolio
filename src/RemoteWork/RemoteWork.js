@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './RemoteWork.module.css'
+import styles from './RemoteWork.module.scss'
 import stylesContainer from '../Common/Styles/Container.module.scss'
+import styleButton from '../Common/Styles/Button.module.scss'
 
-
-const RemoteWork = () => {
+const RemoteWork = (props) => {
     return (
         <div className={styles.RemoteWorkBlock}>
          <div className={`${stylesContainer.Container} ${styles.RemoteWorkContainer}`}>
-            <h1 className={styles.title}>Сonsidering options for remote work</h1>
-             <h2 className={styles.button}><span>hire me</span></h2>
+            <h1 className={styles.title}>Considering options for remote work</h1>
+             <h2 className={`${styles.button} ${styleButton.Button}`} style={{backgroundColor: `${props.PrimeryColor}`}}><span>hire me</span></h2>
          </div>
         </div>
     );
