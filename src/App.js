@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 function App() {
    const [primeryColor, setPrimeryColor] = useState('#50BEC2')
-   const [editMode, setEditMode] = useState(true)
+   const [editMode, setEditMode] = useState(false)
    
    const ChangeColor = (color) => {
        setPrimeryColor(color)
