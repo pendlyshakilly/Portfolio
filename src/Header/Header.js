@@ -15,9 +15,9 @@ const Header = (props) => {
         <div className={styles.Header}>
               <div className={styles.select}>
                 <img src={Logo} onClick={() => {props.onClick()}}/>
-                    {props.editMode && <div className={styles.Container}>
+                    {props.editMode && <div className={styles.Container} >
                         chose your color:
-                        {colors.map(el => <div onClick={() => {props.ChangeColor(el.color ? el.color : el.value)}} key={el.id} className={styles.ContainerMain}>
+                        {colors.map(el => <div onClick={() => {props.ChangeColor(el.color ? el.color : el.value); props.onClick()}}  key={el.id} className={styles.ContainerMain}>
                             <span>{el.value}</span>
                             <div style={{width: '30px', height:  '20px', backgroundColor: `${el.color ? el.color : el.value}`}}>
                                 </div>
