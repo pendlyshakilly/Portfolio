@@ -14,7 +14,7 @@ const Header = (props) => {
     return (
         <div className={styles.Header}>
               <div className={styles.select}>
-                <img src={Logo} onClick={() => {props.onClick()}}/>
+                <img src={'https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=settings-01'} onClick={() => {props.onClick()}}/>
                     {props.editMode && <div className={styles.Container} >
                         chose your color:
                         {colors.map(el => <div onClick={() => {props.ChangeColor(el.color ? el.color : el.value); props.onClick()}}  key={el.id} className={styles.ContainerMain}>
